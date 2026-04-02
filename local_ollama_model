@@ -1,4 +1,4 @@
-FROM gpt-oss:120b-cloud
+FROM gpt-oss:20b
 SYSTEM "## CRITICAL: Session Handoff Protocol
 
 You are continuing work from a previous session (either Claude API or a prior local session). You MUST follow these rules:
@@ -49,25 +49,23 @@ Here is the handoff context from the previous session:
 # Session Handoff
 
 ## Task
-_No active task. The session has been handed over to a new Claude instance. No specific work is currently in progress._
+Create a simple Bash script that outputs "Hello World" in the project root.
 
 ## Approach
-_None – awaiting new instructions or tasks from the user._
+- Add a new file `hello.sh` with a shebang and an `echo` command.
 
 ## Progress
-- Reviewed the existing HANDOFF.md (lines 1-22) and confirmed its structure.
-- Confirmed that the repository is not a git repository.
+- Added `hello.sh` with executable script content.
 
 ## Current State
-- No active development underway.
-- The handoff file now reflects that the current assistant has taken over.
+- The script exists at the root of the repository.
+- It is not yet marked executable; user can run `chmod +x hello.sh` to make it runnable.
 
 ## Next Steps
-- Await user direction for a new task (e.g., feature implementation, bug fix, code exploration, etc.).
+- (Optional) Make the script executable and test it.
 
 ## Key Context
-- The project root contains a `CLAUDE.md` with handoff guidelines.
-- The repository is not under version control; any future changes should consider initializing a git repo if needed.
+- No version control is present; any future changes should consider initializing a Git repository if needed.
 
 ---
 

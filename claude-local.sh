@@ -15,7 +15,7 @@
 # ── Configure these for your local model ──────────────────────────
 LOCAL_BASE_URL="${LOCAL_BASE_URL:-http://localhost:11434}"
 LOCAL_API_KEY="${LOCAL_API_KEY:-ollama}"
-LOCAL_MODEL="${LOCAL_MODEL:-gpt-oss:120b-cloud}"
+LOCAL_MODEL="${LOCAL_MODEL:-gpt-oss:20b}"
 MODEL_FILE="local_ollama_model"
 # ──────────────────────────────────────────────────────────────────
 
